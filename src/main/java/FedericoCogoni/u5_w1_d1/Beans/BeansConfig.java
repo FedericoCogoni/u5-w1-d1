@@ -41,8 +41,6 @@ public class BeansConfig {
     }
 
 
-
-
     @Bean
     Drink getLemonade(){
         return new Drink("Lemonade", 1.29, 128);
@@ -61,28 +59,28 @@ public class BeansConfig {
 
     @Bean
     Pizza getMargheritaPizza(){
-        List<String> toppings = new ArrayList<>();
-        toppings.add(getTomato().getName());
-        toppings.add(getCheese().getName());
+        List<String> toppings = Arrays.asList(
+        getTomato().getName(),
+        getCheese().getName());
         return new Pizza("Margherita", 4.99, 1104, toppings);
     }
 
     @Bean
     Pizza getHawaiianPizza(){
-        List<String> toppings = new ArrayList<>();
-        toppings.add(getTomato().getName());
-        toppings.add(getCheese().getName());
-        toppings.add(getHam().getName());
-        toppings.add(getPineapple().getName());
+        List<String> toppings = Arrays.asList(
+        getTomato().getName(),
+        getCheese().getName(),
+        getHam().getName(),
+        getPineapple().getName());
         return new Pizza("Hawaiian", 6.49, 1024, toppings);
     }
 
     @Bean
     Pizza getSalamiPizza(){
-        List<String> toppings = new ArrayList<>();
-        toppings.add(getTomato().getName());
-        toppings.add(getCheese().getName());
-        toppings.add(getSalami().getName());
+        List<String> toppings = Arrays.asList(
+        getTomato().getName(),
+        getCheese().getName(),
+        getSalami().getName());
         return new Pizza("Salami", 5.99, 1160, toppings);
 
     }
