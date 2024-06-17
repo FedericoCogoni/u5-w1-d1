@@ -9,4 +9,15 @@ public class Topping  extends Product{
     public Topping(String name, double price, int calories) {
         super(name, price, calories);
     }
+
+    @Override
+    public String toString() {
+        return "Topping  -->" +
+                " " + name +
+                ", price " + price+
+                ", calories " + calories+";";
+
+
+
+    }
 }

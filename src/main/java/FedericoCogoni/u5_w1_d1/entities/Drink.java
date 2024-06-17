@@ -11,4 +11,12 @@ public class Drink  extends Product{
         super(name, price, calories);
     }
 
+    @Override
+    public String toString() {
+        return "Drink    -->" +
+                " " + name +
+                ", price " + price +
+                ", calories " + calories+";";
+
+    }
 }

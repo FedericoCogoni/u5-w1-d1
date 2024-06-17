@@ -19,11 +19,10 @@ public class Pizza extends Product {
 
     @Override
     public String toString() {
-        return "Pizza{" +
-                "toppings=" + toppings +
-                ", name='" + name + '\'' +
-                ", price=" + price +
-                ", calories=" + calories +
-                '}';
+        return "Pizza    -->" +
+                " " + name  +
+                toppings +
+                ", price " + price +
+                ", calories " + calories+";";
     }
 }
